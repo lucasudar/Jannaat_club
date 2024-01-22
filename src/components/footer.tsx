@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="text-lg mb-6">
         <div className="flex items-center justify-center gap-4 mb-4">
           <a
-            className="bg-white p-4 text-gray-700 hover:text-white flex items-center gap-2 rounded-full focus:scale-[1.1] hover:scale-[1.1] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.1] hover:scale-[1.1] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
             href="https://wa.me/7893806821"
             target="_blank"
           >
@@ -38,11 +38,6 @@ export default function Footer() {
           <p className="text-gray-700">jannaatclubofficial@gmail.com</p>
         </div>
       </div>
-      <p className="text-sm text-gray-700">
-        <span className="font-semibold">About us:</span> The Jannaat Club is the one and only biggest Indian
-        club in Walking Street, Pattaya. Jannaat Club, as an awesome party destination, is also a paradise of
-        entertainment. It is the perfect destination for night parties and an ever more entertaining nightlife.
-      </p>
       <small className="block text-md mt-4 text-gray-500">
         &copy; 2024 Jannaat Club. All rights reserved.
       </small>

@@ -12,7 +12,7 @@ export default function Events() {
   return (
     <section ref={ref} id="events" className="scroll-mt-28 mb-28">
       <SectionHeading>Upcoming events</SectionHeading>
-      <div className="">
+      <div className="columns-1 xl:columns-2 md:columns-1">
         {eventsData.map((event, index) => (
           <React.Fragment key={index}>
             <Event {...event} />
