@@ -64,21 +64,3 @@ export const eventsData = [
     imageUrl: event4,
   },
 ] as const;
-
-export const featuresData = [
-  "VIP Zone", "Hookah", "Restaurant", "Bar", "Lounge Area", "Dance Floor", "Special Events", "Skyline Pool", "Rooftop Sky Bar"
-] as const;
-
-export const imagesData = [
-  "/assets/img/1.jpg",
-  "/assets/img/2.jpg",
-  "/assets/img/3.jpg",
-  "/assets/img/4.jpg",
-  "/assets/img/5.jpg",
-  "/assets/img/6.jpg",
-  "/assets/img/7.jpg",
-  "/assets/img/8.jpg",
-  "/assets/img/9.jpg",
-  "/assets/img/10.jpg",
-  "/assets/img/11.jpg",
-  ] as const;
