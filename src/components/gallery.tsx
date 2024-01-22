@@ -10,6 +10,11 @@ import Image from 'next/image'
 
 export default function Gallery() {
   const {ref} = useSectionInView("Gallery");
+  const videoUrls = [
+    'https://www.youtube.com/embed/UrpYIAA3oyY',
+    'https://www.youtube.com/embed/NfdfQRdVurc',
+    'https://www.youtube.com/embed/-90Ahaz2xtQ',
+  ]
 
   return (
     <motion.section
@@ -21,19 +26,36 @@ export default function Gallery() {
       className="scroll-mt-28 mb-28"
     >
       <section className="">
-        <SectionHeading>Gallery</SectionHeading>
-        <div className="flex flex-row pr-3 flex-wrap justify-center">
-          <PhotoProvider>
-            {[...Array(10)].map((_, i) => (
-              <PhotoView key={i} src={`/assets/img/${i + 1}.jpg`}>
-                <div className="">
-                  <Image
-                    className=""
-                    width={250} height={250} src={`/assets/img/${i + 1}-copy.jpg`} alt="" />
-                </div>
-              </PhotoView>
+        <div className="pt-4">
+          <SectionHeading>Photos</SectionHeading>
+          <div className="flex flex-row pr-3 flex-wrap justify-center">
+            <PhotoProvider>
+              {[...Array(10)].map((_, i) => (
+                <PhotoView key={i} src={`/assets/img/${i + 1}.jpg`}>
+                  <div className="">
+                    <Image
+                      className=""
+                      width={250} height={250} src={`/assets/img/${i + 1}-copy.jpg`} alt=""/>
+                  </div>
+                </PhotoView>
+              ))}
+            </PhotoProvider>
+          </div>
+        </div>
+        <div className="pt-4">
+          <SectionHeading>Video</SectionHeading>
+          <div className="flex flex-row pr-3 flex-wrap justify-center">
+            {videoUrls.map((url, i) => (
+              <div key={i} className="h-[200px] md:h-[300px] lg:[400px] aspect-video pb-2 pr-2">
+                <iframe
+                  className="w-full h-full aspect-video"
+                  src={url}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+              </div>
             ))}
-          </PhotoProvider>
+          </div>
         </div>
       </section>
     </motion.section>
