@@ -32,10 +32,10 @@ export default function Gallery() {
             <PhotoProvider>
               {[...Array(10)].map((_, i) => (
                 <PhotoView key={i} src={`/assets/img/${i + 1}.jpg`}>
-                  <div className="">
+                  <div className="pr-2 pt-2">
                     <Image
                       className=""
-                      width={250} height={250} src={`/assets/img/${i + 1}-copy.jpg`} alt=""/>
+                      width={350} height={350} src={`/assets/img/${i + 1}-copy.jpg`} alt=""/>
                   </div>
                 </PhotoView>
               ))}
