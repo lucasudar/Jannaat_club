@@ -17,22 +17,32 @@ export default function About() {
       transition={{delay: 0.175}}
       id="about"
     >
-      <SectionHeading>About our club</SectionHeading>
-      <p className="mb-3">
-        The Jannaat Club is one & only {" "}<span className="font-medium">biggest Indian club</span> {" "} in walking
-        street, Pattaya. Jannaat Club one of the awesome
-        party destination is also a paradise of entertainment. It is the perfect destination for night parties & an ever
-        more entertaining nightlife. Partying in Jannaat Club is truly enjoyed by tourists from all over the world, who
-        love viewing the place to enjoy the vibe. The hassle free nightlife and the pleasant weather in Pattaya is
-        enjoyed & thoroughly preferred by tourists of all ages.
-      </p>
-      <ul>
-        <li>VIP Areas</li>
-        <li>Best CCTV Systems</li>
-        <li>Awesome Sound Systems</li>
-        <li>VIP Areas Bodyguards For Security</li>
-        <li>Live Dancers</li>
-      </ul>
+      <div>
+        <SectionHeading>About our club</SectionHeading>
+        <p className="mb-3">
+          The Jannaat Club is one & only {" "}<span className="font-medium">biggest Indian club</span> {" "} in walking
+          street, Pattaya. Jannaat Club one of the awesome
+          party destination is also a paradise of entertainment. It is the perfect destination for night parties & an ever
+          more entertaining nightlife. Partying in Jannaat Club is truly enjoyed by tourists from all over the world, who
+          love viewing the place to enjoy the vibe. The hassle free nightlife and the pleasant weather in Pattaya is
+          enjoyed & thoroughly preferred by tourists of all ages.
+        </p>
+      </div>
+      <div className="flex flex-row items-center justify-between">
+        <div className="text-start">
+          <ul>
+            <li>VIP Areas</li>
+            <li>Best CCTV Systems</li>
+            <li>Awesome Sound Systems</li>
+            <li>VIP Areas Bodyguards For Security</li>
+            <li>Live Dancers</li>
+          </ul>
+        </div>
+        <div>
+          Image
+        </div>
+      </div>
+
     </motion.section>
   );
 }

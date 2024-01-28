@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import {motion} from "framer-motion";
 import {useSectionInView} from "@/lib/hooks";
+import GoogleReviews from "@/components/google-reviews";
 
 export default function Reviews() {
   const {ref} = useSectionInView("Reviews");
@@ -18,13 +19,7 @@ export default function Reviews() {
       id="reviews"
     >
       <SectionHeading>Reviews</SectionHeading>
-      <ul>
-        <li>VIP Areas</li>
-        <li>Best CCTV Systems</li>
-        <li>Awesome Sound Systems</li>
-        <li>VIP Areas Bodyguards For Security</li>
-        <li>Live Dancers</li>
-      </ul>
+      <GoogleReviews/>
     </motion.section>
   );
 }

@@ -32,7 +32,7 @@ export default function Contact() {
       <SectionHeading>Booking your table</SectionHeading>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col text-gray-500"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 

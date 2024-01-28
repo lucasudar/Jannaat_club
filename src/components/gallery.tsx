@@ -28,11 +28,11 @@ export default function Gallery() {
       <section className="">
         <div className="pt-4">
           <SectionHeading>Photos</SectionHeading>
-          <div className="flex flex-row pr-3 flex-wrap justify-center">
+          <div className="flex flex-row gap-2 flex-wrap justify-center">
             <PhotoProvider>
               {[...Array(10)].map((_, i) => (
                 <PhotoView key={i} src={`/assets/img/${i + 1}.jpg`}>
-                  <div className="pr-2 pt-2">
+                  <div>
                     <Image
                       className=""
                       width={350} height={350} src={`/assets/img/${i + 1}-copy.jpg`} alt=""/>
@@ -44,9 +44,9 @@ export default function Gallery() {
         </div>
         <div className="pt-4">
           <SectionHeading>Video</SectionHeading>
-          <div className="flex flex-row pr-3 flex-wrap justify-center">
+          <div className="flex flex-row gap-2 flex-wrap justify-center">
             {videoUrls.map((url, i) => (
-              <div key={i} className="h-[200px] md:h-[300px] lg:[400px] aspect-video pb-2 pr-2">
+              <div key={i} className="h-[200px] md:h-[300px] lg:[400px] aspect-video">
                 <iframe
                   className="w-full h-full aspect-video"
                   src={url}

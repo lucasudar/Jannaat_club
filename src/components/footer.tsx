@@ -8,34 +8,34 @@ export default function Footer() {
       <div className="text-lg mb-6">
         <div className="flex items-center justify-center gap-4 mb-4">
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.1] hover:scale-[1.1] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
+            className="hover:bg-green-500 bg-white p-4 text-gray-500 flex items-center gap-2 rounded-full focus:scale-[1.1] hover:scale-[1.1] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
             href="https://wa.me/7893806821"
             target="_blank"
           >
-            <FaWhatsapp className="hover:bg-green-500 hover:rounded-full" />
+            <FaWhatsapp className="hover:rounded-full" />
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.1] hover:scale-[1.1] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
+            className="hover:bg-pink-500 bg-white p-4 text-gray-500 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.1] hover:scale-[1.1] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
             href="https://www.instagram.com/jannaatclubofficial_"
             target="_blank"
           >
-            <FaInstagram className="hover:bg-pink-500 hover:rounded-full" />
+            <FaInstagram className="hover:rounded-full" />
           </a>
         </div>
 
         <h2 className="font-semibold text-xl mb-2">Contact Us</h2>
         <div className="flex items-center justify-center mb-2">
           <AiOutlineHome className="mr-2 text-gray-500" />
-          <p className="text-gray-700">125 Moo, 10 walking street, Pattaya, Thailand, Chon Buri</p>
+          <p className="text-gray-500">125 Moo, 10 walking street, Pattaya, Thailand, Chon Buri</p>
         </div>
         <div className="flex items-center justify-center mb-2">
           <AiOutlinePhone className="mr-2 text-gray-500" />
-          <p className="text-gray-700">+66 85 055 6050</p>
+          <p className="text-gray-500"><a href="tel:+66850556050">+66 85 055 6050</a></p>
         </div>
         <div className="flex items-center justify-center mb-4">
           <AiOutlineMail className="mr-2 text-gray-500" />
-          <p className="text-gray-700">jannaatclubofficial@gmail.com</p>
+          <p className="text-gray-500"><a href="mailto:jannaatclubofficial@gmail.com">jannaatclubofficial@gmail.com</a></p>
         </div>
       </div>
       <small className="block text-md mt-4 text-gray-500">

@@ -21,12 +21,12 @@ export const links = [
     hash: "#features",
   },
   {
-    name: "Reviews",
-    hash: "#reviews",
-  },
-  {
     name: "Gallery",
     hash: "#gallery",
+  },
+  {
+    name: "Reviews",
+    hash: "#reviews",
   },
   {
     name: "Contact",
