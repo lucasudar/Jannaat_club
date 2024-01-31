@@ -9,7 +9,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 import Image from 'next/image'
 
 export default function Gallery() {
-  const {ref} = useSectionInView("Gallery");
+  const {ref} = useSectionInView("Gallery", 0.2);
   const videoUrls = [
     'https://www.youtube.com/embed/UrpYIAA3oyY',
     'https://www.youtube.com/embed/NfdfQRdVurc',
@@ -25,7 +25,7 @@ export default function Gallery() {
       id="gallery"
       className="scroll-mt-28 mb-28"
     >
-      <section className="">
+      <div className="">
         <div className="pt-4">
           <SectionHeading>Photos</SectionHeading>
           <div className="flex flex-row gap-2 flex-wrap justify-center">
@@ -43,7 +43,7 @@ export default function Gallery() {
           </div>
         </div>
         <div className="pt-4">
-          <SectionHeading>Video</SectionHeading>
+          <SectionHeading>Night Club Video</SectionHeading>
           <div className="flex flex-row gap-2 flex-wrap justify-center">
             {videoUrls.map((url, i) => (
               <div key={i} className="h-[200px] md:h-[300px] lg:[400px] aspect-video">
@@ -57,7 +57,7 @@ export default function Gallery() {
             ))}
           </div>
         </div>
-      </section>
+      </div>
     </motion.section>
   );
 }

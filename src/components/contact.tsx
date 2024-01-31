@@ -29,7 +29,7 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Booking your table</SectionHeading>
+      <SectionHeading>Book your table</SectionHeading>
 
       <form
         className="mt-10 flex flex-col text-gray-500"

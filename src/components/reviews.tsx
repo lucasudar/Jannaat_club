@@ -7,12 +7,11 @@ import {useSectionInView} from "@/lib/hooks";
 import GoogleReviews from "@/components/google-reviews";
 
 export default function Reviews() {
-  const {ref} = useSectionInView("Reviews");
-
+  const { ref } = useSectionInView("Reviews", 0.2);
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="py-12 px-4 mx-auto max-w-7xl text-center scroll-mt-28"
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}
       transition={{delay: 0.175}}
