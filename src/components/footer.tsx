@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineHome } from "react-icons/ai";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import SectionHeading from "@/components/section-heading";
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <h2 className="font-semibold text-xl mb-2">Contact Us</h2>
+        <SectionHeading>Contact Us</SectionHeading>
         <div className="flex items-center justify-center mb-2">
           <AiOutlineHome className="mr-2 text-gray-500" />
           <p className="text-gray-500">125 Moo, 10 walking street, Pattaya, Thailand, Chon Buri</p>

@@ -25,7 +25,7 @@ export default function Gallery() {
       id="gallery"
       className="scroll-mt-28 mb-28"
     >
-      <div className="">
+      <div>
         <div className="pt-4">
           <SectionHeading>Photos</SectionHeading>
           <div className="flex flex-row gap-2 flex-wrap justify-center">

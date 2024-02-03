@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="py-12 px-4 mx-auto max-w-[45rem] text-center scroll-mt-28"
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}
       transition={{delay: 0.175}}
@@ -30,7 +30,7 @@ export default function About() {
       </div>
       <div className="flex flex-row items-center justify-between">
         <div className="text-start">
-          <ul>
+          <ul className="list-inside list-[square]">
             <li>VIP Areas</li>
             <li>Best CCTV Systems</li>
             <li>Awesome Sound Systems</li>
