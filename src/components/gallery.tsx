@@ -23,7 +23,7 @@ export default function Gallery() {
       animate={{opacity: 1, y: 0}}
       transition={{delay: 0.175}}
       id="gallery"
-      className="scroll-mt-28 mb-28"
+      className="scroll-mt-28 mb-10"
     >
       <div>
         <div className="pt-4">

@@ -27,19 +27,19 @@ export default function Footer() {
 
         <SectionHeading>Contact Us</SectionHeading>
         <div className="flex items-center justify-center mb-2">
-          <AiOutlineHome className="mr-2 text-gray-500" />
-          <p className="text-gray-500">125 Moo, 10 walking street, Pattaya, Thailand, Chon Buri</p>
+          <AiOutlineHome className="mr-2" />
+          <p className="">125 Moo, 10 walking street, Pattaya, Thailand, Chon Buri</p>
         </div>
         <div className="flex items-center justify-center mb-2">
-          <AiOutlinePhone className="mr-2 text-gray-500" />
-          <p className="text-gray-500"><a href="tel:+66850556050">+66 85 055 6050</a></p>
+          <AiOutlinePhone className="mr-2" />
+          <p className=""><a href="tel:+66850556050">+66 85 055 6050</a></p>
         </div>
         <div className="flex items-center justify-center mb-4">
-          <AiOutlineMail className="mr-2 text-gray-500" />
-          <p className="text-gray-500"><a href="mailto:jannaatclubofficial@gmail.com">jannaatclubofficial@gmail.com</a></p>
+          <AiOutlineMail className="mr-2" />
+          <p className=""><a href="mailto:jannaatclubofficial@gmail.com">jannaatclubofficial@gmail.com</a></p>
         </div>
       </div>
-      <small className="block text-md mt-4 text-gray-500">
+      <small className="block text-md mt-4">
         &copy; 2024 Jannaat Club. All rights reserved.
       </small>
     </footer>

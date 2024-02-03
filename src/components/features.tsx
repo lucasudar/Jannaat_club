@@ -66,7 +66,7 @@ export default function Features() {
     <section
       id="features"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-14 max-w-[53rem] scroll-mt-28 text-center"
     >
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {Object.entries(featuresData).map(([feature, {icon}], index) => {
@@ -74,7 +74,7 @@ export default function Features() {
 
           return (
             <motion.li
-              className="bg-white borderBlack rounded-xl p-2 md:p-4 hover:bg-yellow-300 hover:opacity-50 transition-colors duration-500"
+              className="bg-white borderBlack rounded-xl p-2 md:p-3 hover:bg-yellow-300 hover:opacity-50 transition-colors duration-500"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
@@ -86,9 +86,9 @@ export default function Features() {
             >
               <div>
                 <div className="flex justify-center">
-                  {Icon && <Icon size={40}/>}
+                  {Icon && <Icon size={30}/>}
                 </div>
-                <div className="">{feature}</div>
+                <div className="text-base xs:text-xs">{feature}</div>
               </div>
             </motion.li>
           );

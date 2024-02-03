@@ -40,22 +40,27 @@ function GoogleReviews() {
       document.body.appendChild(mapDivRef.current);
 
       const service = new google.maps.places.PlacesService(mapDivRef.current);
-      service.getDetails(
-        {
-          // TO GET PLACE ID VISIT: https://developers.google.com/maps/documentation/places/web-service/place-id
-          //https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=Jannaat&location=12.9259892%2C100.8725437&radius=1500&type=club&key=YOUR_API_KEY
-          // @ts-ignore
-          placeId: process.env.NEXT_PUBLIC_GOOGLE_MAPS_PLACE_ID,
-          fields: ["reviews", "rating", "user_ratings_total"],
-        },
+      try {
+        service.getDetails(
+          {
+            // TO GET PLACE ID VISIT: https://developers.google.com/maps/documentation/places/web-service/place-id
+            //https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=Jannaat&location=12.9259892%2C100.8725437&radius=1500&type=club&key=YOUR_API_KEY
+            // @ts-ignore
+            placeId: process.env.NEXT_PUBLIC_GOOGLE_MAPS_PLACE_ID,
+            fields: ["reviews", "rating", "user_ratings_total"],
+          },
 
-        (place, status) => {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            setReviews(place!.reviews as IReview[]); // UPDATING STATE WITH REVIEWS RECEIVED
-            setRating({stars: place!.rating as number, total: place!.user_ratings_total as number})
+          (place, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              setReviews(place!.reviews as IReview[]); // UPDATING STATE WITH REVIEWS RECEIVED
+              setRating({stars: place!.rating as number, total: place!.user_ratings_total as number})
+            }
           }
-        }
-      );
+        );
+      } catch(e) {
+        console.warn(e)
+      }
+
 
       return () => {
         if (mapDivRef.current && document.body.contains(mapDivRef.current)) {
