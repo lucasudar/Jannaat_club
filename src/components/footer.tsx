@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex items-center justify-center gap-4 mb-4">
           <a
             className="hover:bg-green-500 bg-white p-4 text-gray-500 flex items-center gap-2 rounded-full focus:scale-[1.1] hover:scale-[1.1] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
-            href="https://wa.me/7893806821"
+            href="https://wa.me/66850556050"
             target="_blank"
           >
             <FaWhatsapp className="hover:rounded-full" />
